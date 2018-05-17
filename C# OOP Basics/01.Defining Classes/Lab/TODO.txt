@@ -1,3 +1,0 @@
-03.TestClient_2
-04.PersonClass
-04.PersonClass_2

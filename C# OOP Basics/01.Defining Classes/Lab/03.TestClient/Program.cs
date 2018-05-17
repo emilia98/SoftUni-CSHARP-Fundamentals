@@ -38,7 +38,7 @@ class Program
                 else
                 {
                     decimal amount = decimal.Parse(tokens[2]);
-                    account.Balance += amount;
+                    account.Deposit(amount);
                 }
             }
             else if (tokens[0] == "Withdraw")
@@ -57,7 +57,7 @@ class Program
                     }
                     else
                     {
-                        account.Balance -= amount;
+                        account.Withdraw(amount);
                     }
                 }
             }
