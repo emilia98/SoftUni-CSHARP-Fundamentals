@@ -1,0 +1,8 @@
+leftmost
+
+gorna i dolna strana
+x1 <= x2 <= x1 + width 
+
+topmost
+
+y2 <= y1 <= y2 - height
