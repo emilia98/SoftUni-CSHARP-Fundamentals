@@ -9,6 +9,9 @@ namespace _06.TargetPractice
         static int charIndex = 0;
         static int rows;
         static int cols;
+        static int impactRow;
+        static int impactCol;
+        static int radius;
 
         static void Main()
         {
@@ -18,9 +21,9 @@ namespace _06.TargetPractice
 
             rows = int.Parse(input[0]);
             cols = int.Parse(input[1]);
-            int impactRow = int.Parse(shotTokens[0]);
-            int impactCol = int.Parse(shotTokens[1]);
-            int radius = int.Parse(shotTokens[2]);
+            impactRow = int.Parse(shotTokens[0]);
+            impactCol = int.Parse(shotTokens[1]);
+            radius = int.Parse(shotTokens[2]);
             matrix = new char[rows, cols];
 
             int rowCounter = 1;
@@ -42,7 +45,6 @@ namespace _06.TargetPractice
 
 
             Shot(impactRow, impactCol, radius);
-            // PrintMatrix(rows, cols);
             Fall();
             PrintMatrix(rows, cols);
         }
@@ -79,30 +81,29 @@ namespace _06.TargetPractice
         {
             int startCol = colImpact - radius;
             int endCol = colImpact + radius;
+            
             for(int row = rowImpact; row >= Math.Max(0, rowImpact - radius); row--)
             {
-                
                 for(int col = Math.Max(startCol, 0); col <= Math.Min(cols - 1, endCol); col++)
                 {
-                    matrix[row, col] = ' ';
+                    if (IsInBombTarget(row, col))
+                    {
+                        matrix[row, col] = ' ';
+                    }
                 }
-                startCol++;
-                endCol--;
             }
-
-            startCol = colImpact - radius;
-            endCol = colImpact + radius;
-            startCol++;
-            endCol--;
+            
             for (int row = Math.Min(rows - 1, rowImpact + 1); row <= Math.Min(rows - 1, rowImpact + radius); row++)
             {
                 for (int col = Math.Max(startCol, 0); col <= Math.Min(cols - 1, endCol); col++)
                 {
-                    matrix[row, col] = ' ';
+                    if (IsInBombTarget(row, col))
+                    {
+                        matrix[row, col] = ' ';
+                    }
                 }
-                startCol++;
-                endCol--;
             }
+            
         }
 
         static void Fall()
@@ -114,37 +115,43 @@ namespace _06.TargetPractice
                     char currentChar = matrix[row, col];
                     int currentRow = row;
                     bool isEmpty = false;
-
-                    // Console.WriteLine($"({row},{col})");
+                    
                     while(currentChar == ' ' && currentRow > -1)
                     {
 currentChar = matrix[currentRow, col];
                         isEmpty = true;
                         currentRow--;
-                        
-                        // Console.WriteLine("Char = " + currentChar);
                     }
 
                     currentRow++;
-                    //Console.WriteLine(currentChar);
-                    // Console.WriteLine(currentRow);
                     if (isEmpty && currentRow >= 0)
                     {
                         matrix[row, col] = matrix[currentRow, col];
                         matrix[currentRow, col] = ' ';
-                        //Console.WriteLine();
                     }
-                    /*
-                    if(matrix[row, col] == ' ')
-                    {
-                        matrix[row, col] = matrix[row - 1, col];
-                        matrix[row - 1, col] = ' ';
-                    }
-                    */
                 }
                
             }
         }
+
+        static bool IsInBombTarget(int currentRow, int currentCol)
+        {
+            int rowDistance = impactRow - currentRow;
+            int colDistance = impactCol - currentCol;
+            var hypotenuse = Math.Sqrt(rowDistance * rowDistance + colDistance * colDistance);
+
+            return hypotenuse <= radius ? true : false;
+        }
+
+        static bool IsInMatrix(int row, int col)
+        {
+            if(row < 0 || row >= rows || col < 0 || col >= cols)
+            {
+                return false;
+            }
+            return true;
+        }
+
 
         static void PrintMatrix(int rows, int cols)
         {
