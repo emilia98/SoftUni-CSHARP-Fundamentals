@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ArrayManipulator", "01.ArrayManipulator\01.ArrayManipulator.csproj", "{A14548D0-92C9-47BA-BC9B-A08A8BE4CE41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.ArrayManipulator", "01.ArrayManipulator\01.ArrayManipulator.csproj", "{A14548D0-92C9-47BA-BC9B-A08A8BE4CE41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.RadioactiveBunnies", "02.RadioactiveBunnies\02.RadioactiveBunnies.csproj", "{D367D3FA-50CC-43F3-9202-17E7D8E858B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SrabskoUnleashed", "04.SrabskoUnleashed\04.SrabskoUnleashed.csproj", "{E680E10E-15F6-4C4A-AC61-0084109D869E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A14548D0-92C9-47BA-BC9B-A08A8BE4CE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A14548D0-92C9-47BA-BC9B-A08A8BE4CE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A14548D0-92C9-47BA-BC9B-A08A8BE4CE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D367D3FA-50CC-43F3-9202-17E7D8E858B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D367D3FA-50CC-43F3-9202-17E7D8E858B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D367D3FA-50CC-43F3-9202-17E7D8E858B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D367D3FA-50CC-43F3-9202-17E7D8E858B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E680E10E-15F6-4C4A-AC61-0084109D869E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E680E10E-15F6-4C4A-AC61-0084109D869E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E680E10E-15F6-4C4A-AC61-0084109D869E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E680E10E-15F6-4C4A-AC61-0084109D869E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
