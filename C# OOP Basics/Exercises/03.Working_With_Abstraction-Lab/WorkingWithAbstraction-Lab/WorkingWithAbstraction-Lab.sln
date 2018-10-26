@@ -5,15 +5,19 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.PointInRectangle", "02.PointInRectangle\02.PointInRectangle.csproj", "{5CED7BEE-16D0-4171-8B77-59832F2341C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RhombusOfStars", "01.RhombusOfStars\01.RhombusOfStars.csproj", "{D37572A9-8984-45D9-BC01-D9AEE3918131}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.RhombusOfStars", "01.RhombusOfStars\01.RhombusOfStars.csproj", "{D37572A9-8984-45D9-BC01-D9AEE3918131}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RhombusOfStars_2", "01.RhombusOfStars_2\01.RhombusOfStars_2.csproj", "{00AD2D41-2A45-41A7-8E9C-27529B7EB203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.RhombusOfStars_2", "01.RhombusOfStars_2\01.RhombusOfStars_2.csproj", "{00AD2D41-2A45-41A7-8E9C-27529B7EB203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.StudentSystem", "03.StudentSystem\03.StudentSystem.csproj", "{921C7235-FAC5-4ECF-9C73-E07CE2BF65F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.StudentSystem", "03.StudentSystem\03.StudentSystem.csproj", "{921C7235-FAC5-4ECF-9C73-E07CE2BF65F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.HotelReservation", "04.HotelReservation\04.HotelReservation.csproj", "{0D404D57-0D6F-48C9-8018-5EF25ECF8CB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.HotelReservation", "04.HotelReservation\04.HotelReservation.csproj", "{0D404D57-0D6F-48C9-8018-5EF25ECF8CB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RhombusOfStars_3", "01.RhombusOfStars_3\01.RhombusOfStars_3.csproj", "{34387398-36D9-415F-A556-988177E764D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.RhombusOfStars_3", "01.RhombusOfStars_3\01.RhombusOfStars_3.csproj", "{34387398-36D9-415F-A556-988177E764D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.PointInRectangle_2", "02.PointInRectangle_2\02.PointInRectangle_2.csproj", "{CF84E097-5321-49A4-856E-58C01F5067BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.HotelReservation_2", "04.HotelReservation_2\04.HotelReservation_2.csproj", "{7C43A2B1-6098-4AD8-8CB5-1C0EE88245C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{34387398-36D9-415F-A556-988177E764D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34387398-36D9-415F-A556-988177E764D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34387398-36D9-415F-A556-988177E764D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF84E097-5321-49A4-856E-58C01F5067BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF84E097-5321-49A4-856E-58C01F5067BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF84E097-5321-49A4-856E-58C01F5067BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF84E097-5321-49A4-856E-58C01F5067BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C43A2B1-6098-4AD8-8CB5-1C0EE88245C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C43A2B1-6098-4AD8-8CB5-1C0EE88245C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C43A2B1-6098-4AD8-8CB5-1C0EE88245C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C43A2B1-6098-4AD8-8CB5-1C0EE88245C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
