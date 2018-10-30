@@ -15,7 +15,7 @@ namespace _04.ShoppingSpree
             get { return this.name; }
             private set
             {
-                if (value.Length == 0)
+                if (String.IsNullOrWhiteSpace(value))
                 {
                     throw new Exception("Name cannot be empty");
                 }

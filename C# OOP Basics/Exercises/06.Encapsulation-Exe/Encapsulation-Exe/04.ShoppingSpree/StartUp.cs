@@ -21,7 +21,7 @@ namespace _04.ShoppingSpree
             peopleData = new Dictionary<string, Person>();
             productsData = new Dictionary<string, Product>();
 
-            AddpeopleData(peopleDataTokens);
+            AddPeopleData(peopleDataTokens);
             AddProductsData(productsDataTokens);
 
             var input = Console.ReadLine();
@@ -59,11 +59,12 @@ namespace _04.ShoppingSpree
             }
         }
 
-        static void AddpeopleData(string[] peopleDataTokens)
+        static void AddPeopleData(string[] peopleDataTokens)
         {
             foreach (var personToken in peopleDataTokens)
             {
-                var tokens = personToken.Split(new char[] { '=' });//, StringSplitOptions.RemoveEmptyEntries);
+                var tokens = personToken.Split(new char[] { '=' });// StringSplitOptions.RemoveEmptyEntries);
+                // Console.WriteLine(String.Join(" => ", tokens));
                 string name = tokens[0];
                 decimal money = decimal.Parse(tokens[1]);
 
@@ -76,6 +77,7 @@ namespace _04.ShoppingSpree
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
+                    // throw new Exception("S");
                     return;
                 }
 
@@ -91,7 +93,8 @@ namespace _04.ShoppingSpree
         {
             foreach (var productToken in productsDataTokens)
             {
-                var tokens = productToken.Split(new char[] { '=' }); // StringSplitOptions.RemoveEmptyEntries);
+                var tokens = productToken.Split(new char[] { '='}); // StringSplitOptions.RemoveEmptyEntries);
+                // Console.WriteLine(String.Join(" => ", tokens));
                 string name = tokens[0];
                 decimal cost = decimal.Parse(tokens[1]);
 
@@ -104,6 +107,7 @@ namespace _04.ShoppingSpree
                 catch (Exception e)
                 {
                     Console.WriteLine(e.Message);
+                    // throw new Exception("S");
                     return;
                 }
 
