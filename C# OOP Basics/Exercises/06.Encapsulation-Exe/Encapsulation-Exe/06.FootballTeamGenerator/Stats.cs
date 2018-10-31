@@ -52,7 +52,7 @@ namespace _06.FootballTeamGenerator
 
         public int Shooting
         {
-            get {  return this.shooting;}
+            get { return this.shooting; }
             private set
             {
                 ThrowException(value, "Shooting");
@@ -71,7 +71,7 @@ namespace _06.FootballTeamGenerator
 
         private void ThrowException(int value, string statType)
         {
-            if(value < 0 || value > 100)
+            if (value < 0 || value > 100)
             {
                 throw new Exception($"{statType} should be between 0 and 100.");
             }

@@ -6,13 +6,13 @@ namespace _06.FootballTeamGenerator
     {
         private string name;
         private Stats stats;
-        
+
         public string Name
         {
             get { return this.name; }
             set
             {
-                if(string.IsNullOrEmpty(value) || String.IsNullOrWhiteSpace(value))
+                if (String.IsNullOrWhiteSpace(value))
                 {
                     throw new Exception("A name should not be empty.");
                 }

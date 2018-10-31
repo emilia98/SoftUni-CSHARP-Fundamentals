@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace _06.FootballTeamGenerator
 {
@@ -31,15 +30,31 @@ namespace _06.FootballTeamGenerator
 
         public double Rating
         {
-            get { return this.rating; }
-            set { this.rating = value; }
+            get
+            {
+                if (this.Players.Count == 0)
+                {
+                    return 0;
+                }
+
+                double totalRatings = 0;
+
+                foreach (var player in this.Players)
+                {
+                    totalRatings += GetTotalStats(player);
+                }
+
+                // Console.WriteLine(totalRatings);
+                return totalRatings / this.Players.Count;
+            }
+            // set { this.rating = value; }
         }
 
         public Team(string name)
         {
             this.Name = name;
             this.Players = new List<Player>();
-            this.Rating = 0;
+            // this.Rating = 0;
         }
 
         public void AddPlayer(Player player)
@@ -47,7 +62,7 @@ namespace _06.FootballTeamGenerator
             int totalPlayers = this.Players.Count;
             this.Players.Add(player);
             // this.TotalRating += GetTotalStats(player);
-            this.Rating = (this.Rating * totalPlayers + GetTotalStats(player)) / (totalPlayers + 1);
+            // this.Rating = (this.Rating * totalPlayers + GetTotalStats(player)) / (totalPlayers + 1);
         }
 
         public void RemovePlayer(string playerName)
@@ -70,7 +85,7 @@ namespace _06.FootballTeamGenerator
                 int totalPlayers = this.Players.Count;
 
                 //this.TotalRating -= GetTotalStats(player);
-                this.Rating = (this.Rating * totalPlayers - GetTotalStats(player)) / (totalPlayers - 1);
+                // this.Rating = (this.Rating * totalPlayers - GetTotalStats(player)) / (totalPlayers - 1);
                 this.Players.RemoveAt(playerIndex);
                 return;
             }

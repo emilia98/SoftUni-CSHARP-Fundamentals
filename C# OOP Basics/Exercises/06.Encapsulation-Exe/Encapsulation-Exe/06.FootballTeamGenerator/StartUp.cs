@@ -11,14 +11,14 @@ namespace _06.FootballTeamGenerator
 
             string input;
 
-            while((input = Console.ReadLine()) != "END")
+            while ((input = Console.ReadLine()) != "END")
             {
                 var tokens = input.Split(new char[] { ';' });
                 string command = tokens[0];
 
-                if(command == "Team")
+                if (command == "Team")
                 {
-                    string teamName = tokens[1];
+                    string teamName = tokens[1].Trim();
 
                     if (teamsData.ContainsKey(teamName))
                     {
@@ -30,22 +30,22 @@ namespace _06.FootballTeamGenerator
                         var team = new Team(teamName);
                         teamsData.Add(teamName, team);
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                     }
                 }
-                else if(command == "Add")
+                else if (command == "Add")
                 {
-                    string teamName = tokens[1];
+                    string teamName = tokens[1].Trim();
 
-                    if(teamsData.ContainsKey(teamName) == false)
+                    if (teamsData.ContainsKey(teamName) == false)
                     {
                         Console.WriteLine($"Team {teamName} does not exist.");
                         continue;
                     }
 
-                    string playerName = tokens[2];
+                    string playerName = tokens[2].Trim();
                     int endurance = int.Parse(tokens[3]);
                     int sprint = int.Parse(tokens[4]);
                     int dribble = int.Parse(tokens[5]);
@@ -62,33 +62,32 @@ namespace _06.FootballTeamGenerator
                         var team = teamsData[teamName];
                         team.AddPlayer(player);
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                     }
                 }
-                else if(command == "Remove")
+                else if (command == "Remove")
                 {
-                    string teamName = tokens[1];
-                    string playerName = tokens[2];
+                    string teamName = tokens[1].Trim();
+                    string playerName = tokens[2].Trim();
 
-                     var team = teamsData[teamName];
-                     team.RemovePlayer(playerName);
-
-                     if (teamsData.ContainsKey(teamName) == false)
-                     {
-                         //Console.WriteLine($"Team {teamName} does not exist.");
-                         //continue;
-                     }
-                     /*else
-                     {
-                         var team = teamsData[teamName];
-                         team.RemovePlayer(playerName);
-                     }*/
+                    //var team = teamsData[teamName];
+                    //team.RemovePlayer(playerName);
+                    if (teamsData.ContainsKey(teamName) == false)
+                    {
+                        //Console.WriteLine($"Team {teamName} does not exist.");
+                        //continue;
+                    }
+                    else
+                    {
+                        var team = teamsData[teamName];
+                        team.RemovePlayer(playerName);
+                    }
                 }
-                else if(command == "Rating")
+                else if (command == "Rating")
                 {
-                    string teamName = tokens[1];
+                    string teamName = tokens[1].Trim();
 
                     if (teamsData.ContainsKey(teamName) == false)
                     {
