@@ -5,9 +5,13 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.Person", "01.Person\01.Person.csproj", "{629CFEB9-7157-429D-AA55-469B8C56C3A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Mankind", "03.Mankind\03.Mankind.csproj", "{7754DB02-1F9C-48D6-AB26-8FAB9332E0E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Mankind", "03.Mankind\03.Mankind.csproj", "{7754DB02-1F9C-48D6-AB26-8FAB9332E0E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.BookShop", "02.BookShop\02.BookShop.csproj", "{16E82B97-3399-4018-BC59-FC0723409509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.BookShop", "02.BookShop\02.BookShop.csproj", "{16E82B97-3399-4018-BC59-FC0723409509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Animals", "06.Animals\06.Animals.csproj", "{65915F3C-3E27-4361-881C-1652E36FCB17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OnlineRadioDatabase", "04.OnlineRadioDatabase\04.OnlineRadioDatabase.csproj", "{F1DC10EE-E359-4B35-B199-7C21220B4A06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{16E82B97-3399-4018-BC59-FC0723409509}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16E82B97-3399-4018-BC59-FC0723409509}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16E82B97-3399-4018-BC59-FC0723409509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65915F3C-3E27-4361-881C-1652E36FCB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65915F3C-3E27-4361-881C-1652E36FCB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65915F3C-3E27-4361-881C-1652E36FCB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65915F3C-3E27-4361-881C-1652E36FCB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DC10EE-E359-4B35-B199-7C21220B4A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DC10EE-E359-4B35-B199-7C21220B4A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DC10EE-E359-4B35-B199-7C21220B4A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DC10EE-E359-4B35-B199-7C21220B4A06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
