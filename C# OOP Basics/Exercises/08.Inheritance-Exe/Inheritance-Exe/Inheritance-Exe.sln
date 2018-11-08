@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03.Mankind", "03.Mankind\03
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.BookShop", "02.BookShop\02.BookShop.csproj", "{16E82B97-3399-4018-BC59-FC0723409509}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Animals", "06.Animals\06.Animals.csproj", "{65915F3C-3E27-4361-881C-1652E36FCB17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.Animals", "06.Animals\06.Animals.csproj", "{65915F3C-3E27-4361-881C-1652E36FCB17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.OnlineRadioDatabase", "04.OnlineRadioDatabase\04.OnlineRadioDatabase.csproj", "{F1DC10EE-E359-4B35-B199-7C21220B4A06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.OnlineRadioDatabase", "04.OnlineRadioDatabase\04.OnlineRadioDatabase.csproj", "{F1DC10EE-E359-4B35-B199-7C21220B4A06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.MordorsCruelPlan", "05.MordorsCruelPlan\05.MordorsCruelPlan.csproj", "{05D37255-8A3F-47B9-9F05-E56BFE073E48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F1DC10EE-E359-4B35-B199-7C21220B4A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1DC10EE-E359-4B35-B199-7C21220B4A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1DC10EE-E359-4B35-B199-7C21220B4A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05D37255-8A3F-47B9-9F05-E56BFE073E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D37255-8A3F-47B9-9F05-E56BFE073E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D37255-8A3F-47B9-9F05-E56BFE073E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05D37255-8A3F-47B9-9F05-E56BFE073E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
