@@ -11,10 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04.ShoppingSpree", "04.Shop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06.FootballTeamGenerator", "06.FootballTeamGenerator\06.FootballTeamGenerator.csproj", "{CD51471A-538C-4B3D-A6C5-8FBCF982F8DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00", "00\00.csproj", "{669449FA-6F83-4E41-8F61-C3C0A1D004A5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuckingShiot", "FuckingShiot\FuckingShiot.csproj", "{00E070D9-7866-4E01-83C9-35044CDD9D48}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,14 +33,6 @@ Global
 		{CD51471A-538C-4B3D-A6C5-8FBCF982F8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD51471A-538C-4B3D-A6C5-8FBCF982F8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD51471A-538C-4B3D-A6C5-8FBCF982F8DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{669449FA-6F83-4E41-8F61-C3C0A1D004A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{669449FA-6F83-4E41-8F61-C3C0A1D004A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{669449FA-6F83-4E41-8F61-C3C0A1D004A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{669449FA-6F83-4E41-8F61-C3C0A1D004A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00E070D9-7866-4E01-83C9-35044CDD9D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00E070D9-7866-4E01-83C9-35044CDD9D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00E070D9-7866-4E01-83C9-35044CDD9D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00E070D9-7866-4E01-83C9-35044CDD9D48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
