@@ -11,11 +11,9 @@ namespace _02.VehiclesExtension
             get { return this.fuelAmount; }
             set
             {
-                if(value >= this.TankCapacity)
-                {
-                    throw new ArgumentException($"Cannot fit {value} fuel in the tank");
-                }
+                double oldFuelValue = this.fuelAmount;
 
+                this.CheckForFullTank(value - oldFuelValue);
                 this.fuelAmount = value;
             }
         }
@@ -26,15 +24,16 @@ namespace _02.VehiclesExtension
 
         public double TankCapacity { get; private set; }
 
-        protected Vehicle(double fuelAmount, double fuelConsumption)
+        protected Vehicle(double fuelAmount, double fuelConsumption, double tankCapacity)
         {
+            this.TankCapacity = tankCapacity;
+
             try
             {
                 this.FuelAmount = fuelAmount;
             }
             catch(ArgumentException e)
             {
-                Console.WriteLine(e);
                 this.FuelAmount = 0;
             }
             
@@ -42,11 +41,26 @@ namespace _02.VehiclesExtension
             this.Distance = 0;
         }
 
-        public void Drive(double distance)
+        protected void CheckForFullTank(double fuelAmount)
+        {
+            double newAmount = this.FuelAmount + fuelAmount;
+
+            if (newAmount > this.TankCapacity)
+            {
+                throw new ArgumentException($"Cannot fit {fuelAmount} fuel in the tank");
+            }
+        }
+
+        public virtual void Drive(double distance)
         {
             double fuelNeeded = distance * this.FuelConsumption;
 
-            if(fuelNeeded > this.FuelAmount)
+            MoveTheVehicle(fuelNeeded, distance);
+        }
+
+        protected void MoveTheVehicle(double fuelNeeded, double distance)
+        {
+            if (fuelNeeded > this.FuelAmount)
             {
                 ThrowNoEnoughFuelException();
             }
@@ -74,11 +88,13 @@ namespace _02.VehiclesExtension
             try
             {
                 CheckFuelAmount(fuelAmount);
+                CheckForFullTank(fuelAmount);
+
                 this.FuelAmount += fuelAmount;
             }
             catch (ArgumentException e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e.Message);
             }
         }
 
@@ -88,6 +104,11 @@ namespace _02.VehiclesExtension
             {
                 throw new ArgumentException("Fuel must be a positive number");
             }
+        }
+
+        public override string ToString()
+        {
+            return $"{this.GetType().Name}: {this.FuelAmount:f2}";
         }
     }
 }

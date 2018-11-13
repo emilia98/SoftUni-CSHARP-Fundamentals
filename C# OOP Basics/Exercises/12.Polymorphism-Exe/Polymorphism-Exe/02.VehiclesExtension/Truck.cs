@@ -4,7 +4,7 @@ namespace _02.VehiclesExtension
 {
     public class Truck : Vehicle
     {
-        public Truck(double fuelAmount, double fuelConsumption) : base(fuelAmount, fuelConsumption)
+        public Truck(double fuelAmount, double fuelConsumption, double tankCapacity) : base(fuelAmount, fuelConsumption, tankCapacity)
         {
             this.FuelConsumption = base.FuelConsumption + 1.6;
         }
@@ -19,16 +19,19 @@ namespace _02.VehiclesExtension
             throw new ArgumentException("Truck needs refueling");
         }
 
+        
         public override void Refuel(double fuelAmount)
         {
             try
             {
                 this.CheckFuelAmount(fuelAmount);
+                this.CheckForFullTank(fuelAmount);
+
                 this.FuelAmount += (fuelAmount * 0.95);
             }
             catch (ArgumentException e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e.Message);
             }
         }
     }
