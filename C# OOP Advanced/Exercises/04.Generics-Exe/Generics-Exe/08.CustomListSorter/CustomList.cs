@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _07.CustomList
+namespace _08.CustomListSorter
 {
     public class CustomList<T> : ICustomList<T> where T : IComparable<T>
     {
@@ -79,8 +79,6 @@ namespace _07.CustomList
 
             this.CList = modifiedList.ToArray();
             return removedElement;
-            
-            // this.CList.RemoveAt()
         }
 
         public void Swap(int index1, int index2)
@@ -88,6 +86,11 @@ namespace _07.CustomList
             T temp = this.CList[index1];
             this.CList[index1] = this.CList[index2];
             this.CList[index2] = temp;
+        }
+
+        public void Sort()
+        {
+            this.CList = Sorter.Sort(this);
         }
 
         public void Print()
