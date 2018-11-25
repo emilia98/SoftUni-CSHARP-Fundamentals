@@ -33,8 +33,7 @@ namespace GenericScale
             {
                 return this.Left;
             }
-
-
+            
             return this.Right;
         }
     }
