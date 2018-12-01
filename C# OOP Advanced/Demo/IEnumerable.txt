@@ -1,0 +1,3 @@
+IEnumerable -> tells the foreach that the given collection could be iterated
+
+IEnumerator -> sends the elements to the foreach
