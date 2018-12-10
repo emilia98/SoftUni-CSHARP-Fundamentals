@@ -15,7 +15,7 @@ namespace TestDummy.Tests
 
             int expectedResult = 15;
             int actualResult = dummy.Health;
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, actualResult, "The value of the health the dummy has after attack is not correct.");
         }
 
         [TestCase(20, 10)]
@@ -39,7 +39,7 @@ namespace TestDummy.Tests
             int expectedResult = 10;
             int actualResult = dummy.GiveExperience();
 
-            Assert.AreEqual(expectedResult, actualResult);
+            Assert.AreEqual(expectedResult, actualResult, "The XP the dead dummy returns is not correct");
         }
 
         [Test]
@@ -50,7 +50,7 @@ namespace TestDummy.Tests
             Assert.Throws<InvalidOperationException>(() =>
             {
                 dummy.GiveExperience();
-            });
+            }, "Dummy should not return any XP when it's alive");
         }
     }
 }
