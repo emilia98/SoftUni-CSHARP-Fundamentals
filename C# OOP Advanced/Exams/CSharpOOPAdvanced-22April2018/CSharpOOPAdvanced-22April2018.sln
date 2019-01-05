@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestivalManager", "FestivalManager\FestivalManager.csproj", "{E35FA271-8141-427B-8B78-72781E1E54B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FestivalManager.Tests", "FestivalManager.Tests\FestivalManager.Tests.csproj", "{EB79C939-A63C-478E-B4F4-CCB191EED114}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E35FA271-8141-427B-8B78-72781E1E54B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35FA271-8141-427B-8B78-72781E1E54B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E35FA271-8141-427B-8B78-72781E1E54B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E35FA271-8141-427B-8B78-72781E1E54B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB79C939-A63C-478E-B4F4-CCB191EED114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB79C939-A63C-478E-B4F4-CCB191EED114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB79C939-A63C-478E-B4F4-CCB191EED114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB79C939-A63C-478E-B4F4-CCB191EED114}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {339C1213-78CF-4737-820E-3893C9BBD12A}
+	EndGlobalSection
+EndGlobal
